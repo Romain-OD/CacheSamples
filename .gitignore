@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CacheSamples
+/CustomFieldsCacheTest/bin/Debug/net8.0
+/CustomFieldsCacheTest/obj
+/InMemoryCache/bin/Debug/net8.0
+/InMemoryCache/obj
+/Nodels/bin/Debug/net8.0
+/Nodels/obj
+/RedisSample/bin/Debug/net8.0
+/RedisSample/obj
+/Services/bin/Debug/net8.0
+/Services/obj
