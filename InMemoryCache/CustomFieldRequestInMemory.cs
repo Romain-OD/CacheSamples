@@ -18,6 +18,7 @@ public class CustomFieldRequestInMemory(IUserSettingsService userSettingsService
         };
         return res;
     }
+    
     private async Task<List<CustomFieldJs>> GetCfsForClients()
     {
         var companyId = userSettingsService.GetUserDescription().CompanyId;
@@ -36,6 +37,7 @@ public class CustomFieldRequestInMemory(IUserSettingsService userSettingsService
 
         return res;
     }
+    
     private async Task<List<CustomFieldJs>> GetCfsForResources()
     {
         var companyId = userSettingsService.GetUserDescription().CompanyId;
@@ -67,6 +69,7 @@ public class CustomFieldRequestInMemory(IUserSettingsService userSettingsService
 
         return res;
     }
+    
     private async Task<List<CustomFieldJs>> GetCfsForProjects()
     {
         var companyId = userSettingsService.GetUserDescription().CompanyId;
