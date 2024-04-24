@@ -21,6 +21,7 @@ public class CustomFieldRequestRedis(IUserSettingsService userSettingsService, I
         };
         return res;
     }
+    
     private async Task<List<CustomFieldJs>> GetCfsForClients()
     {
         var companyId = userSettingsService.GetUserDescription().CompanyId;
@@ -45,6 +46,7 @@ public class CustomFieldRequestRedis(IUserSettingsService userSettingsService, I
         return JsonSerializer.Deserialize<List<CustomFieldJs>>(cachedData);
     
     }
+    
     private async Task<List<CustomFieldJs>> GetCfsForResources()
     {
         var companyId = userSettingsService.GetUserDescription().CompanyId;
@@ -90,9 +92,9 @@ public class CustomFieldRequestRedis(IUserSettingsService userSettingsService, I
             return res;
         }
 
-        // Convertir les données JSON en liste
         return JsonSerializer.Deserialize<List<CustomFieldJs>>(cachedData);
     }
+    
     private async Task<List<CustomFieldJs>> GetCfsForProjects()
     {
         var companyId = userSettingsService.GetUserDescription().CompanyId;
